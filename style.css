@@ -1,0 +1,220 @@
+/* 
+Available custom font family:
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Raleway', sans-serif; 
+*/
+
+/* Add a full background color to the body and change the font family and color to custom */
+body {
+  background-color: #9ED0E6;
+  color: #252422;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+header {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+header p {
+  font-size: 18px;
+}
+
+header ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-group {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul li {
+  padding: 0 20px 0 0;
+}
+
+header ul li a:link {
+  text-decoration: none;
+}
+
+header .group {
+  margin: 0 10%;
+}
+
+main {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+footer {
+  padding: 12px 0;
+  text-align: center;
+}
+
+/* Rounded image with a border resized */
+img {
+  border-radius: 50%;
+  border: 2px solid #252422;
+  margin: auto;
+  height: 240px;
+  width: 240px;
+}
+
+div.item p,
+div.item ul {
+  font-size: 20px;
+  line-height: 1.8rem;
+}
+
+a:link {
+  color:#DA4167;
+}
+
+a:hover {
+  color: #353535;
+} 
+
+a:visited  {
+ color: #DA4167; 
+}
+/* Adding an alternating background between sections */
+.bg-alternate{
+  background-color: #ffffff;
+}
+
+.center-subtitle {
+  text-align: center;
+  margin: 36px;
+  width: 0 84px;
+}
+
+.code-image,
+.math-image {
+  height: 120px;
+  width: 120px;
+}
+
+/* Aligning the profile picture to the center */
+.profile-pic {
+  margin: auto;
+  height: 240px;
+  width: 240px;
+}
+
+/* Aligning titles to the center */
+.sub-title {
+  text-align: center;
+}
+
+/* Flexbox features */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 84px;
+}
+
+.item {
+  flex: 1;
+  margin: 12px;
+} 
+
+.item-double {
+  flex: 2;
+  margin: 12px;
+}
+
+.item-triple {
+  flex: 3;
+  margin: 12px;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.fab {
+  width: 48px;
+  font-size: 48px;
+}
+
+form {
+  padding: 12px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+form label {
+  font-size: 18px;
+}
+
+form button {
+  background-color: #DA4167;
+  border: 1px solid #DA4167;
+  border-radius: 10px;
+  color: #fff;
+  padding: 6px 12px;
+  width: 100%;
+}
+
+#contact-me p {
+  padding-bottom: 24px;
+}
+
+@media all and (min-width: 996px){
+  section {
+    padding: 3% 5%;
+  }
+
+  header{
+    padding: 0;
+  }
+
+  img {
+    height: 360px;
+    width: 360px;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  .profile-pic {
+    margin: auto;
+    height: 360px;
+    width: 360px;
+  }
+
+  .code-image,
+  .math-image {
+    height: 240px;
+    width: 240px;
+  }
+
+  .code-image {
+    float: right;
+  }
+
+  .rev-col {
+    flex-direction: row-reverse;
+  }
+}
